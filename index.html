@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kerala Vision Football Tournament 2025</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CDN -->
+    <link
+        href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+    >
+
+    <style>
+        body {
+            background-color: #0b1120;
+            color: #e5e7eb;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+        .navbar {
+            background-color: #020617;
+        }
+        .navbar-brand, .nav-link {
+            color: #e5e7eb !important;
+        }
+        .hero {
+            padding: 4rem 0 3rem;
+            background: radial-gradient(circle at top, #1d4ed8 0, #020617 55%);
+            color: #f9fafb;
+            text-align: center;
+        }
+        .hero h1 {
+            font-weight: 700;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+        }
+        .hero p {
+            max-width: 640px;
+            margin: 0.5rem auto 0;
+            color: #cbd5f5;
+        }
+        .section-title {
+            text-transform: uppercase;
+            letter-spacing: .12em;
+            font-size: 0.9rem;
+            color: #9ca3af;
+            margin-bottom: 0.25rem;
+        }
+        .section-heading {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #e5e7eb;
+            margin-bottom: 1.5rem;
+        }
+        .team-card {
+            background: #020617;
+            border-radius: 1rem;
+            border: 1px solid #1f2937;
+            padding: 1.5rem;
+            text-align: center;
+            height: 100%;
+        }
+        .team-card img {
+            max-height: 90px;
+            object-fit: contain;
+            margin-bottom: 1rem;
+        }
+        .team-name {
+            font-weight: 600;
+            font-size: 1.1rem;
+            margin-bottom: 0.25rem;
+        }
+        .team-sub {
+            font-size: 0.85rem;
+            color: #9ca3af;
+        }
+        .table {
+            font-size: 0.85rem;
+        }
+        .table thead {
+            background-color: #111827;
+            color: #d1d5db;
+        }
+        .table tbody tr:nth-child(even) {
+            background-color: #020617;
+        }
+        .table tbody tr:nth-child(odd) {
+            background-color: #030712;
+        }
+        .badge-captain {
+            background-color: #fbbf24;
+            color: #111827;
+            font-weight: 600;
+        }
+        footer {
+            border-top: 1px solid #1f2937;
+            padding: 1rem 0;
+            margin-top: 3rem;
+            font-size: 0.8rem;
+            color: #6b7280;
+        }
+        a {
+            text-decoration: none;
+        }
+        .nav-pills .nav-link {
+            color: #9ca3af;
+        }
+        .nav-pills .nav-link.active {
+            background-color: #1d4ed8;
+        }
+    </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand fw-bold" href="#">
+            KV Football 2025
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#mainNav">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="mainNav" class="collapse navbar-collapse">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item"><a class="nav-link" href="#overview">Overview</a></li>
+                <li class="nav-item"><a class="nav-link" href="#teams">Teams</a></li>
+                <li class="nav-item"><a class="nav-link" href="#squads">Players</a></li>
+                <li class="nav-item"><a class="nav-link" href="#fixtures">Fixtures</a></li>
+                <li class="nav-item"><a class="nav-link" href="#points">Points Table</a></li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- HERO / OVERVIEW -->
+<section class="hero" id="overview">
+    <div class="container">
+        <h1>Kerala Vision Football Tournament 2025</h1>
+        <p>
+            Official portal for fixtures, live scores, team details and player statistics of the
+            Kerala Vision Football Tournament – December 2025.
+        </p>
+    </div>
+</section>
+
+<!-- TEAMS + LOGOS -->
+<section class="py-4" id="teams">
+    <div class="container">
+        <div class="section-title">Tournament Teams</div>
+        <div class="section-heading">Registered Football Clubs</div>
+
+        <!-- NOTE: put your logo files inside an "images" folder and update src paths -->
+        <div class="row g-3">
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="team-card">
+                    <img src="images/vikings-fc.png" alt="Vikings FC Logo">
+                    <div class="team-name">Vikings FC</div>
+                    <div class="team-sub">Captain: (set here, e.g. Anandhu Suresh)</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="team-card">
+                    <img src="images/falcons-phoenix.png" alt="Falcons FC Phoenix Logo">
+                    <div class="team-name">Falcons FC</div>
+                    <div class="team-sub">Phoenix Emblem – Captain: (set)</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="team-card">
+                    <img src="images/golden-eagles.png" alt="Golden Eagles FC Logo">
+                    <div class="team-name">Golden Eagles FC</div>
+                    <div class="team-sub">Captain: (set)</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="team-card">
+                    <img src="images/dinkan-fc.png" alt="Dinkan FC Logo">
+                    <div class="team-name">ഡിങ്കൻ FC</div>
+                    <div class="team-sub">Captain: (set)</div>
+                </div>
+            </div>
+
+            <div class="col-12 col-md-6 col-xl-3 mt-3">
+                <div class="team-card">
+                    <img src="images/falcons-wings.png" alt="Falcons FC Wings Logo">
+                    <div class="team-name">Falcons FC</div>
+                    <div class="team-sub">Wings Emblem – Captain: (set)</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- PLAYERS / SQUADS -->
+<section class="py-4" id="squads">
+    <div class="container">
+        <div class="section-title">Player Database</div>
+        <div class="section-heading">Teams & Player Details</div>
+
+        <!-- Tabs for each captain -->
+        <ul class="nav nav-pills mb-3" id="teamTabs" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="team-anandhu-tab" data-bs-toggle="pill"
+                        data-bs-target="#team-anandhu" type="button" role="tab">
+                    Team Anandhu Suresh
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="team-nikhil-tab" data-bs-toggle="pill"
+                        data-bs-target="#team-nikhil" type="button" role="tab">
+                    Team Nikhil K
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="team-sandeep-tab" data-bs-toggle="pill"
+                        data-bs-target="#team-sandeep" type="button" role="tab">
+                    Team Sandeep
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="team-daniel-tab" data-bs-toggle="pill"
+                        data-bs-target="#team-daniel" type="button" role="tab">
+                    Team Daniel
+                </button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="team-shinoj-tab" data-bs-toggle="pill"
+                        data-bs-target="#team-shinoj" type="button" role="tab">
+                    Team Shinoj
+                </button>
+            </li>
+        </ul>
+
+        <div class="tab-content">
+
+            <!-- TEAM ANANDHU -->
+            <div class="tab-pane fade show active" id="team-anandhu" role="tabpanel">
+                <div class="mb-2">
+                    <span class="badge badge-captain">Captain: Anandhu Suresh</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Department</th>
+                            <th>Employee Code</th>
+                            <th>Mobile</th>
+                            <th>Location / NOC</th>
+                            <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>Shamger Jose K</td><td>Accounts</td><td>KCCL/0034</td><td>8593911711</td><td>Pudukkad</td><td>Defender</td></tr>
+                        <tr><td>Vyshnu</td><td>Field Operations</td><td>KBPL/0443</td><td>9361021616</td><td>Calicut</td><td>Defender</td></tr>
+                        <tr><td>Thasleem</td><td>Digital</td><td>KCCL/0065</td><td>7736434123</td><td>Thrissur</td><td>Goal Keeper</td></tr>
+                        <tr><td>Anandhu Suresh</td><td>Tx</td><td>KBPL/0507</td><td>6238348157</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>ASWIN SASI</td><td>Field Operations</td><td>KBPL/0486</td><td>8129541015</td><td>Adoor / TVM</td><td>Midfielder</td></tr>
+                        <tr><td>Muhammed shijas PT</td><td>Field Operations</td><td>KBPL/0418</td><td>8606557248</td><td>Calicut NOC</td><td>Midfielder</td></tr>
+                        <tr><td>Shajesh Changot</td><td>Tx</td><td>KBPL/0461</td><td>9995349824</td><td>Thrissur</td><td>Defender</td></tr>
+                        <tr><td>Shamir AK</td><td>Field Operations</td><td>KBPL/0179</td><td>8086035733</td><td>Kozhikode</td><td>Defender</td></tr>
+                        <tr><td>MIDHUN V</td><td>Field Operations</td><td>KBPL/0516</td><td>7025784332</td><td>Kasaragod</td><td>Forward</td></tr>
+                        <tr><td>Ajmal P N</td><td>Field Operations</td><td>KBPL/0536</td><td>7306547990</td><td>Kochi, Mattanchery</td><td>Midfielder</td></tr>
+                        <tr><td>Karthik S</td><td>Administration</td><td>KBPL/0589</td><td>9446888256</td><td>Trivandrum NOC</td><td>Midfielder</td></tr>
+                        <tr><td>Justine</td><td>NOC</td><td>KBPL/0467</td><td>9744392609</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>Sulu S</td><td>BSS</td><td>KBPL/0344</td><td>9497753416</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>Rifad K</td><td>Customer Care</td><td>KBPL/0322</td><td>9539605058</td><td>Calicut</td><td>Forward</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TEAM NIKHIL -->
+            <div class="tab-pane fade" id="team-nikhil" role="tabpanel">
+                <div class="mb-2">
+                    <span class="badge badge-captain">Captain: Nikhil K</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Department</th>
+                            <th>Employee Code</th>
+                            <th>Mobile</th>
+                            <th>Location / NOC</th>
+                            <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>NAGUL K S</td><td>Broadband Customer Care</td><td>KBPL/0380</td><td>8593938713</td><td>Thrissur</td><td>Defender</td></tr>
+                        <tr><td>NIKHIL K</td><td>Engineering</td><td>KBPL/0107</td><td>8075193772</td><td>Pudukkad</td><td>Goal Keeper</td></tr>
+                        <tr><td>Anas Mohan</td><td>Digital – Customer Care</td><td>KCCL/0053</td><td>9605065340</td><td>Pudukkad</td><td>Midfielder</td></tr>
+                        <tr><td>SURJITH M V</td><td>Electrical</td><td>KBPL/0577</td><td>7907779817</td><td>Pudukkad</td><td>Midfielder</td></tr>
+                        <tr><td>ARUN KRISHNAN K</td><td>Field Operations</td><td>KBPL/0364</td><td>9747388482</td><td>Kasaragod</td><td>Defender</td></tr>
+                        <tr><td>Kannan AV</td><td>Field Operations</td><td>KBPL/0398</td><td>8086898275</td><td>Ernakulam</td><td>Defender</td></tr>
+                        <tr><td>Vishnu Manoj</td><td>Field Operations</td><td>KBPL/0600</td><td>7012821427</td><td>Thrissur</td><td>Defender</td></tr>
+                        <tr><td>ABIN M BIJU</td><td>Field Operations</td><td>KBPL/0601</td><td>9048476697</td><td>Kothamangalam</td><td>Forward</td></tr>
+                        <tr><td>ANANTHU JAGADEESH</td><td>Field Operations</td><td>KBPL/0436</td><td>9061739589</td><td>Ernakulam</td><td>Forward</td></tr>
+                        <tr><td>MOHAMED NASEEB RC</td><td>Field Operations</td><td>KBPL/0658</td><td>7356035626</td><td>Malappuram</td><td>Forward</td></tr>
+                        <tr><td>Chandradas K P</td><td>TAC</td><td>KBPL/0667</td><td>9037448447</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TEAM SANDEEP -->
+            <div class="tab-pane fade" id="team-sandeep" role="tabpanel">
+                <div class="mb-2">
+                    <span class="badge badge-captain">Captain: Sandeep</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Department</th>
+                            <th>Employee Code</th>
+                            <th>Mobile</th>
+                            <th>Location / NOC</th>
+                            <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>Sandeep</td><td>TAC</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Midfielder</td></tr>
+                        <tr><td>Reneesh</td><td>TAC</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Midfielder</td></tr>
+                        <tr><td>Tittu</td><td>NOC</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Forward</td></tr>
+                        <tr><td>Vishnu</td><td>Service</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Forward</td></tr>
+                        <tr><td>Bineesh</td><td>Administration</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Goal Keeper</td></tr>
+                        <tr><td>Srinath</td><td>Accounts</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Defender</td></tr>
+                        <tr><td>Amal prince</td><td>TX</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Forward</td></tr>
+                        <tr><td>Sarfas</td><td>TAC</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Forward</td></tr>
+                        <tr><td>Shahas</td><td>TAC</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Defender</td></tr>
+                        <tr><td>Midhun</td><td>Service</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Defender</td></tr>
+                        <tr><td>Hari</td><td>Accounts</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Midfielder</td></tr>
+                        <tr><td>Beyon</td><td>TAC</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Defender</td></tr>
+                        <tr><td>Dibin</td><td>TSP</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Midfielder</td></tr>
+                        <tr><td>Ajith</td><td>Marketing</td><td>-</td><td>-</td><td>Ernakulam NOC</td><td>Defender</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TEAM DANIEL -->
+            <div class="tab-pane fade" id="team-daniel" role="tabpanel">
+                <div class="mb-2">
+                    <span class="badge badge-captain">Captain: Daniel</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Department</th>
+                            <th>Employee Code</th>
+                            <th>Mobile</th>
+                            <th>Location / NOC</th>
+                            <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>Anees</td><td>Tx</td><td>KVBL/0454</td><td>8301047019</td><td>Thrissur</td><td>Defender</td></tr>
+                        <tr><td>Jithin MJ</td><td>NOC</td><td>KVBL/0459</td><td>8089146733</td><td>Pudukkad</td><td>Defender</td></tr>
+                        <tr><td>VISHNU PRIYAN T K</td><td>NOC</td><td>KBPL/0576</td><td>7558962500</td><td>Pudukkad</td><td>Defender</td></tr>
+                        <tr><td>Daniel VG</td><td>Broadband Customer Care</td><td>KBPL/0032</td><td>8129300869</td><td>Pudukkad</td><td>Forward</td></tr>
+                        <tr><td>VISHNU I V</td><td>NOC</td><td>KBPL/0034</td><td>9847578416</td><td>Thrissur</td><td>Forward</td></tr>
+                        <tr><td>ROHITH PAVITHRAN MP</td><td>Digital</td><td>KCCL/0022</td><td>8606047665</td><td>Thrissur</td><td>Goal Keeper</td></tr>
+                        <tr><td>Afsal C A</td><td>NOC</td><td>KBPL/0134</td><td>9526094322</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>Sajith</td><td>Digital</td><td>KBPL/0271</td><td>8086898032</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>ABHIJITH K</td><td>Field Operations</td><td>KBPL/0322</td><td>8157825847</td><td>Calicut</td><td>Forward</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- TEAM SHINOJ -->
+            <div class="tab-pane fade" id="team-shinoj" role="tabpanel">
+                <div class="mb-2">
+                    <span class="badge badge-captain">Captain: Shinoj</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Department</th>
+                            <th>Employee Code</th>
+                            <th>Mobile</th>
+                            <th>Location / NOC</th>
+                            <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>PRASANTH GOPINATHAN</td><td>Field Operations</td><td>KBPL/0211</td><td>9048329311</td><td>Oachira</td><td>Forward</td></tr>
+                        <tr><td>Amal Ramesh</td><td>Field Operations</td><td>KBPL/0515</td><td>8301979852</td><td>Kasaragod / Kannur NOC</td><td>Midfielder</td></tr>
+                        <tr><td>Joseph Varghese</td><td>Field Operations</td><td>KBPL/0493</td><td>8590954669</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>Athul Krishna TS</td><td>TX</td><td>KBPL/0346</td><td>7994013414</td><td>Thrissur</td><td>Forward</td></tr>
+                        <tr><td>Jishnu A K</td><td>Service</td><td>KDPL/0001</td><td>8086897597</td><td>Pudukkad</td><td>Forward</td></tr>
+                        <tr><td>Nithin Das VK</td><td>Digital</td><td>KCCL/0018</td><td>9562924198</td><td>Pudukkad</td><td>Forward</td></tr>
+                        <tr><td>Shinoj Joy</td><td>Digital – Customer Care</td><td>KCCL/0014</td><td>8156897505</td><td>Pudukkad</td><td>Forward</td></tr>
+                        <tr><td>Abhijith AV</td><td>Broadband Customer Care</td><td>KBPL/0091</td><td>8943640416</td><td>Calicut</td><td>Goal Keeper</td></tr>
+                        <tr><td>Abhinand T</td><td>TAC</td><td>KBPL/0557</td><td>7736175540</td><td>Thrissur NOC</td><td>Midfielder</td></tr>
+                        <tr><td>ALBIN A S</td><td>Broadband Customer Care</td><td>KBPL/0586</td><td>7356674223</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>Muneer</td><td>Tx</td><td>KBPL/0066</td><td>9633894094</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>SAJI LAL V</td><td>Field Operations</td><td>KBPL/0335</td><td>9633308678</td><td>TVM</td><td>Midfielder</td></tr>
+                        <tr><td>AMARJITH A</td><td>Tx</td><td>KBPL/0321</td><td>9061342820</td><td>Calicut NOC</td><td>Defender</td></tr>
+                        <tr><td>Biswajith B</td><td>Digital</td><td>KCCL/0061</td><td>8921819813</td><td>Pudukkad</td><td>Defender</td></tr>
+                        <tr><td>Abimanyu KB</td><td>Broadband Customer Care</td><td>KBPL/0585</td><td>7736139258</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>Saji Paul Naduthottathil</td><td>Admin</td><td>KCCL/0037</td><td>9419071842</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+<!-- FIXTURES -->
+<section class="py-4" id="fixtures">
+    <div class="container">
+        <div class="section-title">Matches</div>
+        <div class="section-heading">Fixture & Result Schedule</div>
+        <p class="text-secondary">
+            (Here you can add a simple table or later connect to a database / Google Sheet
+            for automatic updates.)
+        </p>
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered align-middle">
+                <thead>
+                <tr>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Venue</th>
+                    <th>Home Team</th>
+                    <th>Away Team</th>
+                    <th>Score</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>–</td><td>–</td><td>–</td>
+                    <td>–</td><td>–</td><td>–</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<!-- POINTS TABLE -->
+<section class="py-4" id="points">
+    <div class="container">
+        <div class="section-title">Standings</div>
+        <div class="section-heading">Points Table</div>
+        <div class="table-responsive">
+            <table class="table table-dark table-bordered align-middle">
+                <thead>
+                <tr>
+                    <th>Team</th>
+                    <th>Played</th>
+                    <th>Wins</th>
+                    <th>Draws</th>
+                    <th>Losses</th>
+                    <th>Goals For</th>
+                    <th>Goals Against</th>
+                    <th>Goal Diff</th>
+                    <th>Points</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr><td>Vikings FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Falcons FC (Phoenix)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Golden Eagles FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>ഡിങ്കൻ FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Falcons FC (Wings)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container text-center">
+        Kerala Vision Football Tournament – Dec 2025 &middot; Official internal portal
+    </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
