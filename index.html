@@ -129,6 +129,7 @@
                 <li class="nav-item"><a class="nav-link" href="#squads">Players</a></li>
                 <li class="nav-item"><a class="nav-link" href="#fixtures">Fixtures</a></li>
                 <li class="nav-item"><a class="nav-link" href="#points">Points Table</a></li>
+                <li class="nav-item"><a class="nav-link" href="live.html">Live</a></li>
             </ul>
         </div>
     </div>
@@ -151,45 +152,49 @@
         <div class="section-title">Tournament Teams</div>
         <div class="section-heading">Registered Football Clubs</div>
 
-        <!-- NOTE: put your logo files inside an "images" folder and update src paths -->
         <div class="row g-3">
+            <!-- Vikings -->
             <div class="col-12 col-md-6 col-xl-3">
                 <div class="team-card">
                     <img src="images/vikings-fc.png" alt="Vikings FC Logo">
                     <div class="team-name">Vikings FC</div>
-                    <div class="team-sub">Captain: (set here, e.g. Anandhu Suresh)</div>
+                    <div class="team-sub">Captain: Nikhil</div>
                 </div>
             </div>
 
-            <div class="col-12 col-md-6 col-xl-3">
-                <div class="team-card">
-                    <img src="images/falcons-phoenix.png" alt="Falcons FC Phoenix Logo">
-                    <div class="team-name">Falcons FC</div>
-                    <div class="team-sub">Phoenix Emblem – Captain: (set)</div>
-                </div>
-            </div>
-
+            <!-- Golden Eagles -->
             <div class="col-12 col-md-6 col-xl-3">
                 <div class="team-card">
                     <img src="images/golden-eagles.png" alt="Golden Eagles FC Logo">
                     <div class="team-name">Golden Eagles FC</div>
-                    <div class="team-sub">Captain: (set)</div>
+                    <div class="team-sub">Captain: Ananthu</div>
                 </div>
             </div>
 
+            <!-- Falcons -->
+            <div class="col-12 col-md-6 col-xl-3">
+                <div class="team-card">
+                    <img src="images/falcons-phoenix.png" alt="Falcons FC Logo">
+                    <div class="team-name">Falcons FC</div>
+                    <div class="team-sub">Captain: Sandeep</div>
+                </div>
+            </div>
+
+            <!-- Dinkan -->
             <div class="col-12 col-md-6 col-xl-3">
                 <div class="team-card">
                     <img src="images/dinkan-fc.png" alt="Dinkan FC Logo">
-                    <div class="team-name">ഡിങ്കൻ FC</div>
-                    <div class="team-sub">Captain: (set)</div>
+                    <div class="team-name">Dinkan FC</div>
+                    <div class="team-sub">Captain: Shinoj</div>
                 </div>
             </div>
 
+            <!-- Minnal -->
             <div class="col-12 col-md-6 col-xl-3 mt-3">
                 <div class="team-card">
-                    <img src="images/falcons-wings.png" alt="Falcons FC Wings Logo">
-                    <div class="team-name">Falcons FC</div>
-                    <div class="team-sub">Wings Emblem – Captain: (set)</div>
+                    <img src="images/falcons-wings.png" alt="Minnal FC Logo">
+                    <div class="team-name">Minnal FC</div>
+                    <div class="team-sub">Captain: Daniel</div>
                 </div>
             </div>
         </div>
@@ -202,46 +207,78 @@
         <div class="section-title">Player Database</div>
         <div class="section-heading">Teams & Player Details</div>
 
-        <!-- Tabs for each captain -->
+        <!-- Tabs for each TEAM -->
         <ul class="nav nav-pills mb-3" id="teamTabs" role="tablist">
             <li class="nav-item" role="presentation">
-                <button class="nav-link active" id="team-anandhu-tab" data-bs-toggle="pill"
-                        data-bs-target="#team-anandhu" type="button" role="tab">
-                    Team Anandhu Suresh
+                <button class="nav-link active" id="vikings-tab" data-bs-toggle="pill"
+                        data-bs-target="#vikings" type="button" role="tab">
+                    Vikings FC
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="team-nikhil-tab" data-bs-toggle="pill"
-                        data-bs-target="#team-nikhil" type="button" role="tab">
-                    Team Nikhil K
+                <button class="nav-link" id="golden-tab" data-bs-toggle="pill"
+                        data-bs-target="#golden" type="button" role="tab">
+                    Golden Eagles FC
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="team-sandeep-tab" data-bs-toggle="pill"
-                        data-bs-target="#team-sandeep" type="button" role="tab">
-                    Team Sandeep
+                <button class="nav-link" id="falcons-tab" data-bs-toggle="pill"
+                        data-bs-target="#falcons" type="button" role="tab">
+                    Falcons FC
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="team-daniel-tab" data-bs-toggle="pill"
-                        data-bs-target="#team-daniel" type="button" role="tab">
-                    Team Daniel
+                <button class="nav-link" id="dinkan-tab" data-bs-toggle="pill"
+                        data-bs-target="#dinkan" type="button" role="tab">
+                    Dinkan FC
                 </button>
             </li>
             <li class="nav-item" role="presentation">
-                <button class="nav-link" id="team-shinoj-tab" data-bs-toggle="pill"
-                        data-bs-target="#team-shinoj" type="button" role="tab">
-                    Team Shinoj
+                <button class="nav-link" id="minnal-tab" data-bs-toggle="pill"
+                        data-bs-target="#minnal" type="button" role="tab">
+                    Minnal FC
                 </button>
             </li>
         </ul>
 
         <div class="tab-content">
 
-            <!-- TEAM ANANDHU -->
-            <div class="tab-pane fade show active" id="team-anandhu" role="tabpanel">
+            <!-- VIKINGS FC (Team Nikhil) -->
+            <div class="tab-pane fade show active" id="vikings" role="tabpanel">
                 <div class="mb-2">
-                    <span class="badge badge-captain">Captain: Anandhu Suresh</span>
+                    <span class="badge badge-captain">Vikings FC – Captain: Nikhil</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Department</th>
+                            <th>Location / NOC</th>
+                            <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>NAGUL K S</td><td>Broadband Customer Care</td><td>Thrissur</td><td>Defender</td></tr>
+                        <tr><td>NIKHIL K</td><td>Engineering</td><td>Pudukkad</td><td>Goal Keeper</td></tr>
+                        <tr><td>Anas Mohan</td><td>Digital – Customer Care</td><td>Pudukkad</td><td>Midfielder</td></tr>
+                        <tr><td>SURJITH M V</td><td>Electrical</td><td>Pudukkad</td><td>Midfielder</td></tr>
+                        <tr><td>ARUN KRISHNAN K</td><td>Field Operations</td><td>Kasaragod</td><td>Defender</td></tr>
+                        <tr><td>Kannan AV</td><td>Field Operations</td><td>Ernakulam</td><td>Defender</td></tr>
+                        <tr><td>Vishnu Manoj</td><td>Field Operations</td><td>Thrissur</td><td>Defender</td></tr>
+                        <tr><td>ABIN M BIJU</td><td>Field Operations</td><td>Kothamangalam</td><td>Forward</td></tr>
+                        <tr><td>ANANTHU JAGADEESH</td><td>Field Operations</td><td>Ernakulam</td><td>Forward</td></tr>
+                        <tr><td>MOHAMED NASEEB RC</td><td>Field Operations</td><td>Malappuram</td><td>Forward</td></tr>
+                        <tr><td>Chandradas K P</td><td>TAC</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- GOLDEN EAGLES FC (Team Anandhu) -->
+            <div class="tab-pane fade" id="golden" role="tabpanel">
+                <div class="mb-2">
+                    <span class="badge badge-captain">Golden Eagles FC – Captain: Anandhu</span>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-dark table-striped table-bordered align-middle">
@@ -273,42 +310,10 @@
                 </div>
             </div>
 
-            <!-- TEAM NIKHIL -->
-            <div class="tab-pane fade" id="team-nikhil" role="tabpanel">
+            <!-- FALCONS FC (Team Sandeep) -->
+            <div class="tab-pane fade" id="falcons" role="tabpanel">
                 <div class="mb-2">
-                    <span class="badge badge-captain">Captain: Nikhil K</span>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-dark table-striped table-bordered align-middle">
-                        <thead>
-                        <tr>
-                            <th>Player</th>
-                            <th>Department</th>
-                            <th>Location / NOC</th>
-                            <th>Position</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr><td>NAGUL K S</td><td>Broadband Customer Care</td><td>Thrissur</td><td>Defender</td></tr>
-                        <tr><td>NIKHIL K</td><td>Engineering</td><td>Pudukkad</td><td>Goal Keeper</td></tr>
-                        <tr><td>Anas Mohan</td><td>Digital – Customer Care</td><td>Pudukkad</td><td>Midfielder</td></tr>
-                        <tr><td>SURJITH M V</td><td>Electrical</td><td>Pudukkad</td><td>Midfielder</td></tr>
-                        <tr><td>ARUN KRISHNAN K</td><td>Field Operations</td><td>Kasaragod</td><td>Defender</td></tr>
-                        <tr><td>Kannan AV</td><td>Field Operations</td><td>Ernakulam</td><td>Defender</td></tr>
-                        <tr><td>Vishnu Manoj</td><td>Field Operations</td><td>Thrissur</td><td>Defender</td></tr>
-                        <tr><td>ABIN M BIJU</td><td>Field Operations</td><td>Kothamangalam</td><td>Forward</td></tr>
-                        <tr><td>ANANTHU JAGADEESH</td><td>Field Operations</td><td>Ernakulam</td><td>Forward</td></tr>
-                        <tr><td>MOHAMED NASEEB RC</td><td>Field Operations</td><td>Malappuram</td><td>Forward</td></tr>
-                        <tr><td>Chandradas K P</td><td>TAC</td><td>Thrissur</td><td>Midfielder</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- TEAM SANDEEP -->
-            <div class="tab-pane fade" id="team-sandeep" role="tabpanel">
-                <div class="mb-2">
-                    <span class="badge badge-captain">Captain: Sandeep</span>
+                    <span class="badge badge-captain">Falcons FC – Captain: Sandeep</span>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-dark table-striped table-bordered align-middle">
@@ -340,40 +345,10 @@
                 </div>
             </div>
 
-            <!-- TEAM DANIEL -->
-            <div class="tab-pane fade" id="team-daniel" role="tabpanel">
+            <!-- DINKAN FC (Team Shinoj) -->
+            <div class="tab-pane fade" id="dinkan" role="tabpanel">
                 <div class="mb-2">
-                    <span class="badge badge-captain">Captain: Daniel</span>
-                </div>
-                <div class="table-responsive">
-                    <table class="table table-dark table-striped table-bordered align-middle">
-                        <thead>
-                        <tr>
-                            <th>Player</th>
-                            <th>Department</th>
-                            <th>Location / NOC</th>
-                            <th>Position</th>
-                        </tr>
-                        </thead>
-                        <tbody>
-                        <tr><td>Anees</td><td>Tx</td><td>Thrissur</td><td>Defender</td></tr>
-                        <tr><td>Jithin MJ</td><td>NOC</td><td>Pudukkad</td><td>Defender</td></tr>
-                        <tr><td>VISHNU PRIYAN T K</td><td>NOC</td><td>Pudukkad</td><td>Defender</td></tr>
-                        <tr><td>Daniel VG</td><td>Broadband Customer Care</td><td>Pudukkad</td><td>Forward</td></tr>
-                        <tr><td>VISHNU I V</td><td>NOC</td><td>Thrissur</td><td>Forward</td></tr>
-                        <tr><td>ROHITH PAVITHRAN MP</td><td>Digital</td><td>Thrissur</td><td>Goal Keeper</td></tr>
-                        <tr><td>Afsal C A</td><td>NOC</td><td>Thrissur</td><td>Midfielder</td></tr>
-                        <tr><td>Sajith</td><td>Digital</td><td>Thrissur</td><td>Midfielder</td></tr>
-                        <tr><td>ABHIJITH K</td><td>Field Operations</td><td>Calicut</td><td>Forward</td></tr>
-                        </tbody>
-                    </table>
-                </div>
-            </div>
-
-            <!-- TEAM SHINOJ -->
-            <div class="tab-pane fade" id="team-shinoj" role="tabpanel">
-                <div class="mb-2">
-                    <span class="badge badge-captain">Captain: Shinoj</span>
+                    <span class="badge badge-captain">Dinkan FC – Captain: Shinoj</span>
                 </div>
                 <div class="table-responsive">
                     <table class="table table-dark table-striped table-bordered align-middle">
@@ -407,6 +382,36 @@
                 </div>
             </div>
 
+            <!-- MINNAL FC (Team Daniel) -->
+            <div class="tab-pane fade" id="minnal" role="tabpanel">
+                <div class="mb-2">
+                    <span class="badge badge-captain">Minnal FC – Captain: Daniel</span>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-dark table-striped table-bordered align-middle">
+                        <thead>
+                        <tr>
+                            <th>Player</th>
+                            <th>Department</th>
+                            <th>Location / NOC</th>
+                            <th>Position</th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr><td>Anees</td><td>Tx</td><td>Thrissur</td><td>Defender</td></tr>
+                        <tr><td>Jithin MJ</td><td>NOC</td><td>Pudukkad</td><td>Defender</td></tr>
+                        <tr><td>VISHNU PRIYAN T K</td><td>NOC</td><td>Pudukkad</td><td>Defender</td></tr>
+                        <tr><td>Daniel VG</td><td>Broadband Customer Care</td><td>Pudukkad</td><td>Forward</td></tr>
+                        <tr><td>VISHNU I V</td><td>NOC</td><td>Thrissur</td><td>Forward</td></tr>
+                        <tr><td>ROHITH PAVITHRAN MP</td><td>Digital</td><td>Thrissur</td><td>Goal Keeper</td></tr>
+                        <tr><td>Afsal C A</td><td>NOC</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>Sajith</td><td>Digital</td><td>Thrissur</td><td>Midfielder</td></tr>
+                        <tr><td>ABHIJITH K</td><td>Field Operations</td><td>Calicut</td><td>Forward</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
         </div>
     </div>
 </section>
@@ -429,78 +434,20 @@
                 </tr>
                 </thead>
                 <tbody>
-                <!-- League / Group matches – 16 Dec 2025 -->
-                <tr>
-                    <td>1</td>
-                    <td>League</td>
-                    <td>Vikings FC  vs  Golden Eagles FC</td>
-                    <td>16-12-2025</td>
-                    <td>–</td>
-                </tr>
-                <tr>
-                    <td>2</td>
-                    <td>League</td>
-                    <td>Falcons FC  vs  Dinkan FC</td>
-                    <td>16-12-2025</td>
-                    <td>–</td>
-                </tr>
-                <tr>
-                    <td>3</td>
-                    <td>League</td>
-                    <td>Minnal FC  vs  Vikings FC</td>
-                    <td>16-12-2025</td>
-                    <td>–</td>
-                </tr>
-                <tr>
-                    <td>4</td>
-                    <td>League</td>
-                    <td>Golden Eagles FC  vs  Dinkan FC</td>
-                    <td>16-12-2025</td>
-                    <td>–</td>
-                </tr>
-                <tr>
-                    <td>5</td>
-                    <td>League</td>
-                    <td>Falcons FC  vs  Minnal FC</td>
-                    <td>16-12-2025</td>
-                    <td>–</td>
-                </tr>
-
-                <!-- Knockout – 17 Dec 2025 -->
-                <tr>
-                    <td>6</td>
-                    <td>Semi Final 1</td>
-                    <td>Vikings FC  vs  Dinkan FC</td>
-                    <td>17-12-2025</td>
-                    <td>–</td>
-                </tr>
-                <tr>
-                    <td>7</td>
-                    <td>Semi Final 2</td>
-                    <td>Golden Eagles FC  vs  Falcons FC</td>
-                    <td>17-12-2025</td>
-                    <td>–</td>
-                </tr>
-                <tr>
-                    <td>8</td>
-                    <td>Losers Final</td>
-                    <td>Loser SF1  vs  Loser SF2</td>
-                    <td>17-12-2025</td>
-                    <td>–</td>
-                </tr>
-                <tr>
-                    <td>9</td>
-                    <td>Final</td>
-                    <td>Winner SF1  vs  Winner SF2</td>
-                    <td>17-12-2025</td>
-                    <td>–</td>
-                </tr>
+                <tr><td>1</td><td>League</td><td>Vikings FC  vs  Golden Eagles FC</td><td>16-12-2025</td><td>–</td></tr>
+                <tr><td>2</td><td>League</td><td>Falcons FC  vs  Dinkan FC</td><td>16-12-2025</td><td>–</td></tr>
+                <tr><td>3</td><td>League</td><td>Minnal FC   vs  Vikings FC</td><td>16-12-2025</td><td>–</td></tr>
+                <tr><td>4</td><td>League</td><td>Golden Eagles FC  vs  Dinkan FC</td><td>16-12-2025</td><td>–</td></tr>
+                <tr><td>5</td><td>League</td><td>Falcons FC  vs  Minnal FC</td><td>16-12-2025</td><td>–</td></tr>
+                <tr><td>6</td><td>Semi Final 1</td><td>Vikings FC  vs  Dinkan FC</td><td>17-12-2025</td><td>–</td></tr>
+                <tr><td>7</td><td>Semi Final 2</td><td>Golden Eagles FC  vs  Falcons FC</td><td>17-12-2025</td><td>–</td></tr>
+                <tr><td>8</td><td>Losers Final</td><td>Loser SF1  vs  Loser SF2</td><td>17-12-2025</td><td>–</td></tr>
+                <tr><td>9</td><td>Final</td><td>Winner SF1  vs  Winner SF2</td><td>17-12-2025</td><td>–</td></tr>
                 </tbody>
             </table>
         </div>
     </div>
 </section>
-
 
 <!-- POINTS TABLE -->
 <section class="py-4" id="points">
@@ -524,10 +471,10 @@
                 </thead>
                 <tbody>
                 <tr><td>Vikings FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>Falcons FC (Phoenix)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
                 <tr><td>Golden Eagles FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>ഡിങ്കൻ FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
-                <tr><td>Falcons FC (Wings)</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Falcons FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Dinkan FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
+                <tr><td>Minnal FC</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr>
                 </tbody>
             </table>
         </div>
